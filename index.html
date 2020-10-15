@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 p {
-  text-align: left;
+  text-align: center;
   font-size: 40px;
   margin-top: 50px;
   margin-bottom: 0px;
 }
     
 h2 {
-  text-align: left;
+  text-align: center;
   font-size: 40px;
   margin-top: 0;
 }
@@ -26,15 +26,10 @@ h1 {
 <body>
 <h1>Duurt lang...</h1>
 <p>Dagen nadat Bryan & Olivier hun stage nagekeken had moeten worden:</p>
-<h2>Concept:</h2>
-<h2>152 dagen totaal</h2>
-<h2></h2>
-<h2>Devinitieve versie:</h2>
+<hr/>
+<h2>Concept: 152 dagen totaal</h2>
 <h2 id="c1">...</h2>
-<h2></h2>
-<h2>Totaal:
 <h2 id="c2">...</h2>
-</h2>
 <script>
 // Set the date we're counting down to
 var countupDate = new Date("2020-07-19 00:00:00").getTime();
@@ -55,7 +50,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("c1").innerHTML = days + "d " + hours + "h "
+  document.getElementById("c1").innerHTML = "Definitief: " + days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
 // -------------------------------------------
@@ -72,7 +67,7 @@ var x = setInterval(function() {
   var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("c2").innerHTML = days2 + "d " + hours2 + "h "
+  document.getElementById("c2").innerHTML = "Totaal: " + days2 + "d " + hours2 + "h "
   + minutes2 + "m " + seconds2 + "s ";
   
 }, 1000);
